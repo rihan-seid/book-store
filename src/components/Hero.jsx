@@ -11,10 +11,13 @@ import "swiper/css/effect-coverflow";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+
 const Home = () => {
   const [currentImage, setCurrentImage] = useState(
     "https://images.pexels.com/photos/1907785/pexels-photo-1907785.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=2"
   );
+
+  
 
   // Book covers mapping
   const bookCovers = {
@@ -309,31 +312,36 @@ const Home = () => {
 
 
       {/* Amazing Book Display */}
-      <div className="container mx-auto px-4 py-8">
+  <div className="container mx-auto px-4 py-8">
         <div className="w-full ">
-          <span className="text-4xl font-bold text-[#2b5c91] mb-4 md:mb-0 font-serif">
-            <span className="text-green-600">Book</span>Store
-            <span className="text-green-600">.com</span>
-          </span>
-          <div className="bg-slate-200 border rounded-lg flex items-center overflow-hidden shadow-sm">
-            <div className="bg-gray-50 p-6 rounded-lg  border border-gray-200">
-              <h2 className="text-xl font-bold mb-4 ">New to eBooks.com?</h2>
-              <p className="text-blue-600 hover:underline cursor-pointer">Learn more</p>
-            </div>
-            <div className="w-full ml-20  p-4 ">
-              <input
-                type="text"
-                placeholder="Search by  title, author, subject or ISBN"
-                className="flex-grow w-[1050px] rounded-md px-4 py-3 bg-white  outline-black text-white"
-              />
-              <button className="bg-[#0d4b8c] ml-4 text-white font-semibold px-5   py-2 hover:bg-[#093869]">
-                GO
-              </button>
-            </div>
+    <div class="text-center mb-8">
+      <span class="text-5xl md:text-6xl font-extrabold text-[#2b5c91] font-serif drop-shadow-md">
+        <span class="text-green-600">Book</span>Store
+        <span class="text-green-600">.com</span>
+      </span>
+    </div>
 
-          </div>
-        </div>
+
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-100 rounded-xl flex flex-col md:flex-row items-center overflow-hidden shadow-lg p-4 md:p-0">
+
+        <div class="bg-white p-6 rounded-lg border border-gray-200 text-center md:text-left flex-shrink-0 mb-4 md:mb-0 md:mr-6 shadow-sm transition-all duration-300 hover:shadow-md">
+        <h2 class="text-xl md:text-2xl font-bold mb-3 text-blue-800">New to eBooks.com?</h2>
+        <p class="text-blue-600 hover:underline cursor-pointer font-semibold">Learn more</p>
       </div>
+
+       <div class="w-full p-4 md:p-6 flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+        <input
+          type="text"
+          placeholder="Search by title, author, subject or ISBN"
+          class="flex-grow w-full rounded-full px-6 py-3 md:py-4 bg-white border border-gray-300 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-blue-300 focus:border-transparent transition-all duration-300 text-base md:text-lg shadow-sm"
+        />
+        <button class="bg-[#0d4b8c] text-white font-semibold px-8 py-3 md:py-4 rounded-full hover:bg-[#093869] focus:outline-none focus:ring-4 focus:ring-blue-300 transition-all duration-300 text-base md:text-lg shadow-lg">
+          GO
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
@@ -443,7 +451,7 @@ const Home = () => {
           <motion.div 
             className="cursor-pointer"
             whileHover={{ y: -5 }}
-            transition={{ duration: 0.12 }}
+            transition={{ duration: 0. }}
           >
             <div className="overflow-hidden rounded-lg">
               <img
